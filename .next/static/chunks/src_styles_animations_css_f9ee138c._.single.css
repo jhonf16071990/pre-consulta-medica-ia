@@ -1,0 +1,98 @@
+/* [project]/src/styles/animations.css [app-client] (css) */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: .6s ease-out forwards fade-in-up;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: .6s ease-out forwards fade-in;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: .6s ease-out forwards scale-in;
+}
+
+.delay-100 {
+  animation-delay: .1s;
+}
+
+.delay-200 {
+  animation-delay: .2s;
+}
+
+.delay-300 {
+  animation-delay: .3s;
+}
+
+.delay-400 {
+  animation-delay: .4s;
+}
+
+.delay-500 {
+  animation-delay: .5s;
+}
+
+.transition-transform {
+  transition: transform .2s ease-in-out;
+}
+
+.transition-all {
+  transition: all .2s ease-in-out;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transition: all .6s ease-out;
+  transform: translateY(20px);
+}
+
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=src_styles_animations_css_f9ee138c._.single.css.map*/
